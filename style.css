@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{  
+    
+    min-height: 800px;
+    margin: -8px;
+    z-index: 2;
+}
+
+.video-background{
+    position: fixed;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    object-fit: cover;
+    
+
+    #background-video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);    
+    }
+}
+
+.titolo-container{
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.titolo{
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+   
+}
+
+.page-1{
+    background-image: url(IMG_5579.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.title{
+    font-size: 48px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subtitle-nativity{
+    font-size: 48px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.subtitle-data{
+    font-size: 48px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.subtitle{
+    font-size: 48px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.link-container{
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    font-size: 58px;
+
+    a{
+        color: white;
+        
+        
+
+    }
+}
+
+a::after {
+    content: '>';
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, margin-left 0.3s ease;
+}
+
+/* Effetto hover per il link e la freccia */
+a:hover {
+    transform: scale(1.1);
+}
+
+a:hover::after {
+    transform: scale(1.1);
+    margin-left: 10px;
+}
+
+.page-2{
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.container-info{
+    padding: 35px;
+    width: 650px;
+    margin-top: -15px;
+    z-index: 1;
+}
+
+.page-3{
+    height: 70px;
+    background-color: black;
+}
+
+.container-contatti{
+    padding: 20px;
+
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 58px;
+        color: white;
+        font-weight: 500;
+    }
+
+    
+    .subtitle-vol {
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .subtitle-nativity {
+        font-size: 32px;
+        color: white;
+        font-weight: 500;
+        margin-top: -36px;
+    }
+
+    .subtitle-data {
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .subtitle-meet{
+        font-size: 28px !important;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .subtitle {
+        font-size: 32px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .link-container {
+        font-size: 32px;
+        white-space: nowrap;
+        position: unset;
+    }
+
+    .page-3 {
+        height: 70px;
+        background-color: black;
+        
+        
+    }
+
+    .container-info{
+        width: 320px;
+        
+    }
+}
