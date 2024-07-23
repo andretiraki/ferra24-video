@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-
 .container{  
-    
     min-height: 800px;
     margin: -8px;
     z-index: 2;
@@ -21,17 +18,16 @@ body {
     overflow: hidden;
     z-index: -1;
     object-fit: cover;
-    
+}
 
-    #background-video{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transform: translate(-50%, -50%);    
-    }
+#background-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);    
 }
 
 .titolo-container{
@@ -46,7 +42,6 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-   
 }
 
 .page-1{
@@ -56,36 +51,35 @@ body {
     background-repeat: no-repeat;
 }
 
-
-
 .title{
     font-size: 48px;
     color: white;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .subtitle-nativity{
     font-size: 48px;
     color: white;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 .subtitle-data{
     font-size: 48px;
     color: white;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
-.subtitle{
-    font-size: 48px;
-    color: white;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+.subtitle-container .subtitle {
+    font-size: 24px; /* Riduci la dimensione del carattere */
+    margin: 5px 0; /* Riduci lo spazio tra le voci */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle-container.second {
+    margin-top: 100px; /* Aumenta il margine superiore per spostare le scritte verso il basso */
 }
 
 .link-container{
@@ -93,13 +87,10 @@ body {
     bottom: 0;
     right: 60px;
     font-size: 58px;
+}
 
-    a{
-        color: white;
-        
-        
-
-    }
+a {
+    color: white;
 }
 
 a::after {
@@ -109,7 +100,6 @@ a::after {
     transition: transform 0.3s ease, margin-left 0.3s ease;
 }
 
-/* Effetto hover per il link e la freccia */
 a:hover {
     transform: scale(1.1);
 }
@@ -120,37 +110,92 @@ a:hover::after {
 }
 
 .page-2{
-    
     background-size: cover;
     background-position: center;
 }
 
-.container-info{
+.container-info {
     padding: 35px;
     width: 650px;
     margin-top: -15px;
     z-index: 1;
+    font-size: 20px; /* Riduci ulteriormente la dimensione del carattere */
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle-meet {
+    font-size: 18px; /* Riduci ulteriormente la dimensione del carattere */
+    font-style: normal; /* Rimuove il corsivo */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.location-title {
+    font-size: 20px; /* Dimensione del carattere per la location */
+    font-weight: 700; /* In grassetto */
+    margin-top: 10px;
+}
+
+.location-coordinates {
+    font-size: 18px; /* Dimensione del carattere per le coordinate */
+    margin-bottom: 20px;
+}
+
+.location-coordinates a {
+    color: white;
+    text-decoration: underline;
 }
 
 .page-3{
     height: 70px;
     background-color: black;
 }
+.container-page-3 {
+    height: 70px;
+    background-color: black;
+}
+
+.container-contatti {
+    padding: 20px;
+    color: white; /* Colore del testo */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle {
+    font-size: 14px; /* Dimensione del carattere per le intestazioni */
+    margin-bottom: 10px; /* Spazio inferiore per separare dalle informazioni di contatto */
+}
+
+.instagram-accounts {
+    margin-top: 10px; /* Spazio superiore per separare dall'intestazione "Contact us" */
+}
+
+.instagram-name {
+    font-size: 12px; /* Dimensione del carattere per i nomi Instagram */
+    margin: 5px 0; /* Spazio tra i nomi */
+}
+
+.instagram-name a {
+    color: white; /* Colore del link */
+    text-decoration: none; /* Rimuove la sottolineatura dal link */
+}
+
+.instagram-name a:hover {
+    text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
+}
+
 
 .container-contatti{
     padding: 20px;
-
 }
 
 @media (max-width: 768px) {
-
     .title {
         font-size: 58px;
         color: white;
         font-weight: 500;
     }
 
-    
     .subtitle-vol {
         font-size: 16px;
         color: white;
@@ -170,14 +215,14 @@ a:hover::after {
         font-weight: 500;
     }
 
-    .subtitle-meet{
-        font-size: 28px !important;
-        font-family: 'Roboto', sans-serif;
+    .subtitle-meet {
+        font-size: 16px; /* Riduci la dimensione del carattere */
+        font-style: normal; /* Rimuove il corsivo */
+        font-family: 'Montserrat', sans-serif;
     }
 
-
     .subtitle {
-        font-size: 32px;
+        font-size: 24px; /* Riduci la dimensione del carattere per uniformità */
         color: white;
         font-weight: 500;
     }
@@ -191,12 +236,9 @@ a:hover::after {
     .page-3 {
         height: 70px;
         background-color: black;
-        
-        
     }
 
-    .container-info{
+    .container-info {
         width: 320px;
-        
     }
 }
